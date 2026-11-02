@@ -170,6 +170,13 @@ section{padding:90px 0;position:relative}
 .tl .glass h3{margin:0}
 .note{font-size:14px;color:var(--muted);margin-top:22px}
 .proof{display:block;margin-top:14px;font-size:14px;font-weight:600;color:#e8e8ee}
+.writeup{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:8px 16px;border-radius:99px;
+  font:600 13px var(--body);letter-spacing:.02em;color:#e8e8ee;
+  background:rgba(255,255,255,.06);border:1px solid var(--edge);
+  transition:transform .25s var(--ease),background .25s,border-color .25s,color .25s,box-shadow .25s}
+.writeup svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s var(--ease)}
+.writeup:hover,.writeup:focus-visible{color:#fff;border-color:rgba(220,20,60,.85);background:rgba(220,20,60,.16);box-shadow:0 8px 26px -10px rgba(220,20,60,.75)}
+.writeup:hover svg{transform:translate(2px,-2px)}
 .track{display:grid;grid-template-columns:repeat(4,1fr);position:relative;gap:14px}
 .track::before{content:"";position:absolute;left:12%;right:12%;top:17px;height:2px;background:linear-gradient(90deg,#fff 0,#fff 38%,rgba(255,255,255,.18) 38%)}
 .step{text-align:center;position:relative}
@@ -295,6 +302,10 @@ body:not(.js) .rv{opacity:1;filter:none;transform:none}
       <h3>Unrestricted file upload</h3>
       <p>Uploads were not restricted, allowing storage exhaustion, phishing page hosting and abuse as free hosting. Reported responsibly and fixed.</p>
       <span class="proof">A private coding community site</span>
+      <a class="writeup" href="https://github.com/EiV0id/Security-Writeups/tree/main/Web%20Application/01-File-Upload" target="_blank" rel="noopener noreferrer">
+        Read the write-up
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg>
+      </a>
     </article>
     <article class="glass lum c3 rv" style="--d:.1s">
       <span class="chip i">Informational</span>
